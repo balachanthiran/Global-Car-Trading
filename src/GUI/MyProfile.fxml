@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<ScrollPane prefHeight="400.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.MyProfileController">
+   <content>
+      <AnchorPane id="PROFILEPANE" prefHeight="407.0" prefWidth="521.0" styleClass="pane" stylesheets="@../Resources/style.css">
+         <children>
+            <Label fx:id="lblHello" alignment="CENTER" layoutX="159.0" layoutY="38.0" prefHeight="17.0" prefWidth="183.0" text="Hello, " />
+            <Label fx:id="lblEmail" alignment="CENTER" layoutX="202.0" layoutY="129.0" prefHeight="17.0" prefWidth="114.0" text="E-mail:" />
+            <Label fx:id="lblAddress" layoutX="235.0" layoutY="186.0" prefHeight="17.0" prefWidth="51.0" text="Address:" />
+            <ComboBox fx:id="countryBox" layoutX="32.0" layoutY="34.0" onAction="#handleChangeLanguage" prefHeight="25.0" prefWidth="139.0" promptText="Change Language" />
+            <TextField fx:id="addressTxt" layoutX="200.0" layoutY="211.0" prefHeight="25.0" prefWidth="120.0" />
+            <TextField fx:id="phoneTxt" layoutX="200.0" layoutY="259.0" prefHeight="25.0" prefWidth="120.0" />
+            <Button fx:id="btnSaveInfo" layoutX="228.0" layoutY="342.0" mnemonicParsing="false" onAction="#handleSaveInfo" text="Save Info" />
+            <Label fx:id="lblPhone" layoutX="237.0" layoutY="242.0" prefHeight="17.0" prefWidth="51.0" text="Phone:" />
+            <Label fx:id="lblPass" alignment="CENTER" layoutX="203.0" layoutY="290.0" prefHeight="17.0" prefWidth="110.0" text="Password:" />
+            <Label fx:id="lblInbox" layoutX="83.0" layoutY="83.0" text="Inbox" />
+            <Button fx:id="btnUpdateInbox" layoutX="54.0" layoutY="342.0" mnemonicParsing="false" onAction="#handleUpdateInbox" text="Update" />
+            <ListView fx:id="inboxView" layoutX="28.0" layoutY="103.0" prefHeight="202.0" prefWidth="140.0" />
+            <Button fx:id="btnLogout" layoutX="378.0" layoutY="34.0" mnemonicParsing="false" onAction="#handleLogout" text="Logout" />
+            <ListView fx:id="myAdsView" layoutX="342.0" layoutY="103.0" prefHeight="202.0" prefWidth="140.0" />
+            <Label fx:id="lblMyads" layoutX="392.0" layoutY="83.0" text="My ads" />
+            <Button fx:id="btnDeleteMessage" layoutX="29.0" layoutY="309.0" mnemonicParsing="false" onAction="#handleDeleteMessage" text="Delete" />
+            <Button fx:id="btnHandleReply" layoutX="117.0" layoutY="309.0" mnemonicParsing="false" onAction="#handleReply" text="Reply" />
+            <Button fx:id="btnUpdateMyads" layoutX="368.0" layoutY="342.0" mnemonicParsing="false" onAction="#handleUpdateMyads" text="Update" />
+            <Button fx:id="btnDeleteAd" layoutX="343.0" layoutY="309.0" mnemonicParsing="false" onAction="#handleDeleteAd" text="Delete" />
+            <Button fx:id="btnViewAd" layoutX="440.0" layoutY="309.0" mnemonicParsing="false" onAction="#handleViewAd" text="View" />
+            <Label fx:id="errLbl" alignment="CENTER" contentDisplay="TOP" layoutX="54.0" layoutY="66.0" prefHeight="17.0" prefWidth="394.0" />
+            <PasswordField fx:id="passTxt" alignment="CENTER" layoutX="202.0" layoutY="309.0" prefHeight="25.0" prefWidth="120.0" promptText="New password?" />
+            <TextField fx:id="emailTxt" editable="false" layoutX="200.0" layoutY="153.0" prefHeight="25.0" prefWidth="120.0" />
+         </children>
+      </AnchorPane>
+   </content>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</ScrollPane>

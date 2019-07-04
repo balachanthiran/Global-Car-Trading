@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="GlobalCarTrading.jnlp">
+  <information>
+    <title>GlobalCarTrading</title>
+    <vendor>Nasibollah</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <jfx:javafx-runtime version="8.0+" href="http://javadl.sun.com/webapps/download/GetFile/javafx-latest/windows-i586/javafx2.jnlp"/>
+  </resources>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="GlobalCarTrading.jar" size="536763" download="eager" />
+    <jar href="lib/postgresql-9.2-1002.jdbc4.jar" size="571894" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="GlobalCarTrading" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="GUI.ClientGUI"  name="GlobalCarTrading" />
+  <update check="always"/>
+</jnlp>

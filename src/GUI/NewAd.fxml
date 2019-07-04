@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<ScrollPane prefHeight="447.0" prefWidth="551.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.NewAdController">
+   <content>
+      <AnchorPane prefHeight="453.0" prefWidth="557.0" styleClass="pane" stylesheets="@../Resources/style.css">
+         <children>
+            <TextField fx:id="titleTxt" layoutX="79.0" layoutY="36.0" promptText="Title ..." />
+            <TextArea fx:id="descriptionArea" layoutX="23.0" layoutY="89.0" prefHeight="193.0" prefWidth="260.0" promptText="Description ..." />
+            <Button layoutX="100.0" layoutY="411.0" mnemonicParsing="false" onAction="#handleUploadImage" text="Upload Image" />
+            <ImageView fx:id="imageView" fitHeight="108.0" fitWidth="141.0" layoutX="83.0" layoutY="293.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="ErrLbl" alignment="CENTER" layoutX="120.0" layoutY="61.0" prefHeight="17.0" prefWidth="327.0" wrapText="true" />
+            <Text layoutX="402.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Car info" />
+            <TextField fx:id="txtBrand" layoutX="348.0" layoutY="89.0" promptText="Brand ..." />
+            <TextField fx:id="txtVIN" layoutX="349.0" layoutY="130.0" promptText="VIN ..." />
+            <TextField fx:id="txtPrice" layoutX="348.0" layoutY="173.0" promptText="Price ..." />
+            <ComboBox fx:id="conditionBox" layoutX="348.0" layoutY="213.0" onAction="#handleConditionSelected" prefWidth="150.0" promptText="Condition ..." />
+            <TextField fx:id="txtDistanceTraveled" layoutX="349.0" layoutY="248.0" promptText="Distance traveled in km ..." visible="false" />
+            <TextField fx:id="txtAge" layoutX="348.0" layoutY="281.0" promptText="Age in years..." visible="false" />
+            <Button layoutX="392.0" layoutY="411.0" mnemonicParsing="false" onAction="#handleDoneBtn" text="Done" />
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>

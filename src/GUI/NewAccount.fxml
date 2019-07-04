@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="520.0" styleClass="pane" stylesheets="@../Resources/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.NewAccountController">
+   <children>
+      <TextField fx:id="nameTxt" alignment="CENTER" layoutX="188.0" layoutY="79.0" promptText="Name" />
+      <TextField fx:id="mailTxt" alignment="CENTER" layoutX="188.0" layoutY="116.0" promptText="E-mail" />
+      <TextField fx:id="addressTxt" alignment="CENTER" layoutX="186.0" layoutY="158.0" promptText="Address" />
+      <TextField fx:id="phoneTxt" alignment="CENTER" layoutX="188.0" layoutY="200.0" promptText="Phone" />
+      <PasswordField fx:id="passTxt" alignment="CENTER" layoutX="188.0" layoutY="242.0" promptText="Password" />
+      <Button layoutX="238.0" layoutY="285.0" mnemonicParsing="false" onAction="#onDoneAction" text="Done" />
+      <Label fx:id="errLbl" alignment="CENTER" contentDisplay="TOP" layoutX="77.0" layoutY="325.0" prefHeight="17.0" prefWidth="371.0" wrapText="true" />
+   </children>
+</AnchorPane>

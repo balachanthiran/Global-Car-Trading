@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="400.0" prefWidth="520.0" styleClass="pane" stylesheets="@../Resources/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.AdsController">
+   <children>
+      <ListView fx:id="adsView" layoutX="134.0" layoutY="66.0" prefHeight="285.0" prefWidth="267.0" />
+      <Button fx:id="btnNewAd" layoutX="433.0" layoutY="214.0" mnemonicParsing="false" onAction="#handleNewAd" text="New Ad" />
+      <Button fx:id="btnOpenAd" layoutX="430.0" layoutY="171.0" mnemonicParsing="false" onAction="#handleOpenAd" text="Open Ad" />
+      <Label fx:id="errLbl" alignment="CENTER" layoutX="122.0" layoutY="32.0" prefHeight="17.0" prefWidth="251.0" />
+      <Button fx:id="btnUpdate" layoutX="240.0" layoutY="361.0" mnemonicParsing="false" onAction="#handleUpdate" text="Update" />
+      <TextField fx:id="searchField" alignment="CENTER" layoutX="41.0" layoutY="173.0" prefHeight="25.0" prefWidth="60.0" promptText="..." />
+      <Button fx:id="btnSearch" layoutX="45.0" layoutY="214.0" mnemonicParsing="false" onAction="#handleSearch" text="Search" />
+   </children>
+</AnchorPane>

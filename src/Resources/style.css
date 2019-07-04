@@ -1,0 +1,94 @@
+#ROOTNODE {
+    -fx-background-image:url("globalcartrading.jpg");
+    -fx-background-repeat: stretch;   
+    -fx-background-size: 570 450;
+    -fx-base: rgb(50, 50, 50);
+    -fx-background: rgb(50, 50, 50);
+    -fx-control-inner-background:  rgb(50, 50, 50);
+
+
+}
+
+#PROFILEPANE{
+    -fx-background-image:url("Mountain-Road.jpg");
+    -fx-background-repeat: stretch;       
+    -fx-background-size: 570 450;
+}
+.pane{
+      -fx-background-image:url("simplebackground.jpg");
+    -fx-background-repeat: stretch;   
+    -fx-background-size: 570 450;
+}
+.label {
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: black;
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+}
+
+.text-field {
+    -fx-prompt-text-fill: aliceblue;
+    -fx-background-color: darkslategrey;
+    -fx-border-color: black;
+    
+}
+
+.button{
+    -fx-padding: 4 7 7 7;
+    -fx-background-insets: 0,0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 8;
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #a34313 0%, #903b12 100%),
+        #9d4024,
+        #d86e3a,
+        radial-gradient(center 50% 50%, radius 100%, #d86e3a, #c54e2c);
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+    -fx-font-weight: bold;
+    -fx-font-size: 1.1em;
+}
+
+.button:hover {
+-fx-background-color: -fx-shadow-highlight-color, -fx-outer-border, -fx-inner-border, -fx-body-color;
+-fx-color: -fx-hover-base;
+}
+
+.list-view {
+-fx-table-cell-border-color:derive(-fx-base,+10%);
+-fx-table-header-border-color:derive(-fx-base,+20%);
+}
+
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-opacity: 0;
+}
+
+.tab-pane
+{
+    -fx-tab-min-width:90px;
+}
+
+.tab{
+    -fx-background-insets: 0 1 0 1,0,0;
+    -fx-background-color: linear-gradient(to top, -fx-base, derive(-fx-base,30%));
+}
+.tab-pane .tab
+{
+    -fx-background-color: #e6e6e6;
+
+}
+
+.tab-pane .tab:selected
+{
+    -fx-background-color: #3c3c3c;
+}
+
+.tab .tab-label { 
+    -fx-alignment: CENTER;
+    -fx-text-fill: #828282;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+.tab:selected .tab-label { 
+    -fx-alignment: CENTER;
+    -fx-text-fill: #96b946;
+}
